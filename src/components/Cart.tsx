@@ -49,14 +49,14 @@ export const Cart = () => {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => dispatch(removeFromCart(item.product.id))}
-                  className="p-1 rounded bg-gray-200 hover:bg-gray-300 transition-colors"
+                  className="p-1 rounded bg-gray-200 hover:bg-gray-300 transition-colors cursor-pointer"
                 >
                   <Minus size={16} />
                 </button>
                 <span className="w-8 text-center font-semibold">{item.quantity}</span>
                 <button
                   onClick={() => dispatch(addToCart(item.product))}
-                  className="p-1 rounded bg-blue-600 hover:bg-blue-700 text-white transition-colors"
+                  className="p-1 rounded bg-blue-600 hover:bg-blue-700 text-white transition-colors cursor-pointer"
                 >
                   <Plus size={16} />
                 </button>
